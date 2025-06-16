@@ -10,5 +10,6 @@ phases:
     commands:
       - npm install --loglevel=error
       - echo Executing database migrations
+      - npx sequelize db:create
       - npx sequelize db:migrate
       - codebuild-breakpoint
